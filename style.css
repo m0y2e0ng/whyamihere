@@ -1,0 +1,70 @@
+* {
+        margin: 0;
+        padding: 0;
+      }
+     
+      body {
+        overflow: hidden; /* 스크롤 x가로 y세로 히든<->스크롤 */
+        line-height: 1.5; /* 행간 */
+        word-break: keep-all; /* 단어 단위로 텍스트 끊기게, break all은 반대 */
+        color: black;
+        cursor: pointer;
+      }
+
+      /* a {word-break : break all;} - 얘만 따로 지정하는 게 나을 때도 있음 */
+
+      h1 {
+      font-size: 17pt;
+      color: black;
+      text-decoration: underline;
+      }
+
+      p {
+        font-size: 17pt;
+        font-weight: bold;
+      }
+
+      img {
+        height: 300px;
+      }
+
+      mark {
+        background-color: goldenrod;
+      }
+
+      .im1 { color: goldenrod; }
+
+      a {
+        position: absolute; /* 절대적 */
+        top: 0;
+        left: 0;
+        width: 100%; /* 어디를 눌러도 a링크이도록 */
+        height: 100%;
+        padding: 10px;/* margin은 a링크 밖으로 나가니까 */
+        background-color: gainsboro;
+        color: black;
+        text-decoration: none;
+      }
+
+/* : 조건부 */
+
+      a:visited {
+        color: black;
+      }  /* a를 방문 후에 어떻게 할 건지 */
+
+      a:not(:first-child) {
+        display: none; /* none<->block */
+      } /* 첫번째 애 빼고 안 보이게 해 */
+
+      a:target {
+        display: block;
+      } /*  */
+
+      @media screen and (max-width: 704px) {
+
+}
+
+    
+
+
+    
