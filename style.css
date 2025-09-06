@@ -29,10 +29,10 @@
       }
 
       mark {
-        background-color: goldenrod;
+        background-color: cornflowerblue;
       }
 
-      .im1 { color: goldenrod; }
+      .im1 { color: cornflowerblue; }
 
       a {
         position: absolute; /* 절대적 */

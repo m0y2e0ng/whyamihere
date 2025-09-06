@@ -12,6 +12,10 @@
   </head>
 
   <body>
+
+
+
+
     <a id="1" href="#2">
       <img src="https://cdn.news.unn.net/news/photo/201407/136802_25354_1559.jpg">
       <h1>나는 왜 대학으로 왔나?</h1>
@@ -66,6 +70,20 @@
       <h1>나는 왜 대학으로 왔나?</h1>
       <p>얼레벌레 특성화 고등학교 디자인과에 진학한 나, 얼레벌레 배우고 얼레벌레 취업을 하니 얼레벌레 그럭저럭 일을 하며 살 수 있었다. 처음으로 내가 만든 것이 사람들과 상호작용 하는 것을 보며 만족했지만 찌라시를 계속해서 만들고 있다는 생각을 지울 수가 없었다... 직장을 그만둔 후, 지시 없이는 무언가 만들기 어려웠다. 내가 계속해서 느꼈던 회의감은 배움의 부재에서 부터 오고 있었다. 다 알기도 전에 포기하기에는 아쉽다는 생각이 들었다. <p class="im1">바~루 입학 완료!</p></p>
     </a>
+
+    <audio id="bgm" src="신승훈_02_I Believe_엽기적인 그녀 OST_320.mp3"></audio>
+
+    <script>
+      let played = false;
+    
+      window.addEventListener("hashchange", () => {
+        if (location.hash === "#2" && !played) {
+          const audio = document.getElementById("bgm");
+          audio.play();
+          played = true;
+        }
+      });
+    </script>
 
   </body>
 </html>
